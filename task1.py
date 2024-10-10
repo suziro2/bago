@@ -1,4 +1,4 @@
-import sys
+
 names = [['Alice', 'Bob', 'Charlie'],
          ['David', 'Eve', 'Frank'],
          ['Grace', 'Heidi', 'Ivan'],
@@ -12,10 +12,14 @@ for Names in names:
         if get_name == name:
             names.pop([0][0])
             print("Alice remove")
-            sys.exit()
-    else:
-        new_name = input("Enter new name:")
-        names.append(new_name)
-        print("naka abay sa batak")
+            print(names)
+            break
+        else:
+            new_name = input("Enter new name:")
+            names.append(new_name)
+            print("goods")
+            print(names)
+            break
+
 
 
